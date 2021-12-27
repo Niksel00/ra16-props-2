@@ -1,11 +1,7 @@
 import './App.css';
 import Listing from './components/Listing';
-import etsy from './data/etsy.json';
+const data = require('./etsy.json');
 
-function App() {
-  return (
-    <Listing items={etsy} />
-  );
+export default function App() {
+  return <Listing items={data} />;
 }
-
-export default App;
